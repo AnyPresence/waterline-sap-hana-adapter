@@ -1,0 +1,1 @@
+# waterline-sap-hana-adapter
