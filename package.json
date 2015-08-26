@@ -1,35 +1,38 @@
 {
-  "name": "waterline-sap-hana-adapter",
+  "name": "waterline-sap-hana",
   "version": "0.10.0",
-  "description": "Waterline SAP HANA adapter for AnyPresence",
-  "main": "adapter.js",
+  "description": "Oracle DB adapter for Sails / Waterline AnyPresence",
+  "main": "lib/adapter.js",
   "scripts": {
-    "test": "node test/integration/runner -R spec -b"
+	"test": "node test/integration/runner -R spec -b"
   },
-  "repository": {"type":"git","url":"git://github.com/balderdashy/waterline-%s.git"},
+  "repository": {"type":"git","url":"git://github.com/AnyPresence/waterline-sap-hana-adapter"},
   "keywords": [
-    "waterline-sap-hana-adapter",
-    "adapter",
-    "sails",
-    "waterline",
-    "sails.js",
-    "plugin"
+	"sap",
+	"hana",
+	"adapter",
+	"sails",
+	"waterline",
+	"sails.js",
+	"plugin",
+	"anypresence"
   ],
-  "author": "Juan Carlos Cancela <jcancela@anypresence.com>",
-  "license": "MIT",
+  "author": "juancarloscancela <jcancela@anypresence.com>",
+  "license": "AnyPresence License",
   "readmeFilename": "README.md",
-  "dependencies": {},
-  "devDependencies": {
-    "waterline-adapter-tests": "~0.10.0",
-    "mocha": "*",
-    "captains-log": "~0.11.0"
+  "dependencies": {
+	"squel": "3.10.0",
+	"waterline-adapter-tests": "~0.10.0",
+	"mocha": "*",
+	"captains-log": "0.11.0",
+	"hdb":"*"
   },
   "waterlineAdapter": {
-    "type": "waterline-sap-hana-adapter",
-    "interfaces": [
-      "semantic",
-      "queryable"
-    ],
-    "waterlineVersion": "~0.10.0"
+	"type": "sap-hana",
+	"interfaces": [
+	  "semantic",
+	  "queryable"
+	],
+	"waterlineVersion": "~0.10.0"
   }
 }
