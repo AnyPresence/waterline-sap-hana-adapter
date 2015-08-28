@@ -1,7 +1,7 @@
 {
   "name": "waterline-sap-hana",
   "version": "0.10.0",
-  "description": "Oracle DB adapter for Sails / Waterline AnyPresence",
+  "description": "SAP HANA DB adapter for Sails / Waterline AnyPresence",
   "main": "lib/adapter.js",
   "scripts": {
 	"test": "node test/integration/runner -R spec -b"
